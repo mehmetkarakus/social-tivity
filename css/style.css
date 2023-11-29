@@ -9,6 +9,7 @@ body, html{
 
 a{
     color: #fff;
+    text-decoration:none;
 }
 
 ul, li{
@@ -20,9 +21,16 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 0 30px;
 }
 
 .header__logo{}
 
-.header__menu {}
+.header__menu ul {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+.main__slider{
+    background-color: aliceblue;
+}
